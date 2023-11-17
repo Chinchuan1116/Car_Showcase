@@ -54,4 +54,9 @@ export interface ShowMoreProps{
   setLimit: (limit: number) => void;
 }
 
+export interface SearchBarProps {
+  setManuFacturer: (manufacturer: string) => void;
+  setModel: (model: string) => void;
+}
+
 export type CarState = CarProps[] & { message?: string };
