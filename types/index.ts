@@ -43,10 +43,9 @@ export interface OptionProps{
   value:string
 }
 
-export interface CustomFilterProps{
-  title?:string,
-  options:OptionProps[],
-  setFilter: (selected: string) => void;
+export interface CustomFilterProps<T> {
+  options: OptionProps[];
+  setFilter: (selected: T) => void;
 }
 
 export interface ShowMoreProps{
